@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科学上网与本站访问指南</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --text: #1f2937;
+            --text-light: #4b5563;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --accent: #dc2626;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .guide-container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 2.5rem 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin: 0 0 0.5rem 0;
+        }
+
+        header p {
+            color: var(--text-light);
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            color: var(--text);
+            margin-top: 0;
+            border-left: 4px solid var(--primary);
+            padding-left: 0.75rem;
+            font-size: 1.35rem;
+        }
+
+        ul, ol {
+            padding-left: 1.2rem;
+            color: var(--text-light);
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* VPN 厂商推荐卡片布局 */
+        .vpn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .vpn-card {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            background-color: #fafafa;
+        }
+
+        .vpn-name {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .vpn-tag {
+            font-size: 0.75rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .tag-speed { background-color: #dbeafe; color: #1e40af; }
+        .tag-secure { background-color: #dcfce7; color: #166534; }
+        .tag-budget { background-color: #fef9c3; color: #854d0e; }
+
+        .vpn-card p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .vpn-features {
+            font-size: 0.85rem;
+            color: #64748b;
+            padding-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .alert-box {
+            background-color: #fff1f2;
+            border-left: 4px solid var(--accent);
+            padding: 1.25rem;
+            color: #991b1b;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .alert-box p {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="guide-container">
+        <header>
+            <h1>科学上网与本站访问指南</h1>
+            <p>请按照以下步骤配置网络，即可顺畅浏览本站资源</p>
+        </header>
+
+        <section>
+            <h2>1. 为什么需要翻墙（VPN）访问？</h2>
+            <p>由于全球网络路由限制及防火墙阻隔，本站服务器部署于海外。直接连接可能导致加载缓慢、图片无法显示或完全无法打开。通过安全的虚拟专用网络（VPN），您可以建立加密通道，实现稳定顺畅的访问。</p>
+        </section>
+
+        <section>
+            <h2>2. 行业公认安全的知名 VPN 厂商推荐</h2>
+            <p>为了保障您的数据安全和连接质量，切勿购买个人搭建的非法小作坊（俗称机场）。以下为国际公认、严格执行“无日志政策”的顶级厂商：</p>
+            
+            <div class="vpn-grid">
+                <!-- NordVPN -->
+                <div class="vpn-card">
+                    <div class="vpn-name">
+                        NordVPN <span class="vpn-tag tag-speed">速度极快</span>
+                    </div>
+                    <p>综合实力最强的行业领头羊。自主研发的 NordLynx 协议速度极快，防封锁能力极强，非常适合无损打开网页和观看高清视频。</p>
+                    <div class="vpn-features">
+                        • 核心优势：全平台客户端、内置威胁防护、暗网泄露监控、节点极多。
+                    </div>
+                </div>
+
+                <!-- ExpressVPN -->
+                <div class="vpn-card">
+                    <div class="vpn-name">
+                        ExpressVPN <span class="vpn-tag tag-secure">极致稳定</span>
+                    </div>
+                    <p>业界公认的高端品牌。以卓越的稳定性和强大的隐私保护著称，即使在网络审查严格的地区也拥有非常强劲的穿透力。</p>
+                    <div class="vpn-features">
+                        • 核心优势：独家 Lightway 协议、军工级加密、24/7 顶级技术客服。
+                    </div>
+                </div>
+
+                <!-- Surfshark -->
+                <div class="vpn-card">
+                    <div class="vpn-name">
+                        Surfshark <span class="vpn-tag tag-budget">高性价比</span>
+                    </div>
+                    <p>非常适合多设备家庭或团队。最大的特点是不限制同时在线的设备数量，而且价格非常亲民，功能却毫不妥协。</p>
+                    <div class="vpn-features">
+                        • 核心优势：不限设备连接数、自带广告拦截、性价比极高、速度稳定。
+                    </div>
+                </div>
+
+                <!-- Proton VPN -->
+                <div class="vpn-card">
+                    <div class="vpn-name">
+                        Proton VPN <span class="vpn-tag tag-secure">隐私至上</span>
+                    </div>
+                    <p>由欧洲核子研究组织（CERN）科学家团队研发，总部位于瑞士。将隐私保护做到了极致，支持纯匿名注册，安全防御等级极高。</p>
+                    <div class="vpn-features">
+                        • 核心优势：瑞士隐私法保护、核心安全网络架构、开源且通过独立审计。
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. 三步配置，快速访问本站</h2>
+            <ol>
+                <li><strong>获取正规工具：</strong> 访问上述国际知名的合规VPN服务商官网，或在官方应用商店（App Store / Google Play）下载正版客户端。</li>
+                <li><strong>开启核心安全设置：</strong> 打开客户端设置，务必开启 <strong>Kill Switch（终止开关）</strong> 功能，并将连接协议设置为自动或 <strong>WireGuard</strong>（NordVPN 请选 NordLynx）。</li>
+                <li><strong>连接推荐节点：</strong> 
+                    <ul>
+                        <li>如果为了**极速加载本站**：请优先连接距离中国大陆较近的节点（如中国香港、中国台湾、日本、新加坡）。</li>
+                        <li>连接成功后，重新刷新本站页面即可正常浏览所有内容。</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section style="background-color: #f0fdf4; border-left: 4px solid #22c55e;">
+            <h2 style="color: #14532d;">💡 最佳浏览体验建议</h2>
+            <ul style="color: #166534;">
+                <li>建议使用 **Google Chrome**、**Edge** 或 **Safari** 浏览器访问本站，以获得最佳的网页渲染与兼容性。</li>
+                <li>如果遇到页面加载不全或卡顿，可以尝试清除浏览器缓存，或开启浏览器的“无痕/隐私模式”再次访问。</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2026 本站访问支持中心. 保持理性，安全冲浪。</p>
+        </footer>
+    </div>
+
+</body>
+</html>
