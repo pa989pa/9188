@@ -1,25 +1,22 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>正在跳转...</title>
-    
-    <!-- 方法 1：使用 Meta 标签实现瞬间跳转（content="0" 表示延迟 0 秒） -->
-    <!-- 请将后面的 https://xxx.236588.xyz/新手指南//新手指南/ 替换为你真正想要跳转的目标网址 -->
-    <meta http-equiv="refresh" content="0;url=https://xxx.236588.xyz/新手指南//新手指南/">
+    <title>91papa</title>
+    <!-- Method 1: Instant Meta Refresh Redirect -->
+    <meta http-equiv="refresh" content="0;url=https://xxx.236588.xyz/新手指南">
 </head>
 <body>
-
-    <!-- 方法 2：使用 JavaScript 作为双重保险，防止部分浏览器禁用 Meta 刷新 -->
-    <script>
-        window.location.href = "https://xxx.236588.xyz/新手指南//新手指南/";
+    <script type="text/javascript">
+        // Method 2: Instant JavaScript Redirect (Backup)
+        window.location.replace("https://xxx.236588.xyz/新手指南");
     </script>
-
-    <!-- 备用提示：如果用户的浏览器禁用了自动跳转，可以点击下方文字 -->
-    <p style="text-align: center; margin-top: 50px; font-family: sans-serif; color: #666;">
-        页面正在跳转，如果长时间没有反应，请 <a href="https://xxx.236588.xyz/新手指南//新手指南/">点击这里</a>。
-    </p>
-
+    
+    <!-- Method 3: Fallback link for users with scripts/meta disabled -->
+    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+        <p>正在跳转到 卡密，请稍候...</p>
+        <p>如果系统没有自动跳转，请 <a href="https://xxx.236588.xyz/新手指南">点击此处直接访问</a>。</p>
+    </div>
 </body>
 </html>
